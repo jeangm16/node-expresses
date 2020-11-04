@@ -26,3 +26,14 @@ router.post("/api/newburger", function (request, respones) {
         console.log("Newly added ID: ", result.insertId);
     });
 });
+
+router.put("/api/update", function (request, response) {
+    console.log(request.body.id);
+    burger.update( request.body.id, (result) => {
+        response.json({id: result.insertId});
+        console.log("Updated ID: ", result.insertId);
+    });
+});
+
+// export router object for server.js
+module.exports = router;
