@@ -19,9 +19,10 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/newburger", function (request, respones) {
-
-
-
-
-}
-)
+    burger.create( request.body.burger_name, (result) => {
+        // return the id of the inserted row
+        // https://github.com/mysqljs/mysql#getting-the-id-of-an-inserted-row
+        response.json({id: result.insertId});
+        console.log("Newly added ID: ", result.insertId);
+    });
+});
