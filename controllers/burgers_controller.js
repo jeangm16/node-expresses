@@ -18,4 +18,10 @@ router.get("/", function (req, res) {
     });
 });
 
-router.post("/api/newburger", function (request, respones))
+router.post("/api/newburger", function (request, respones) {
+
+
+
+
+}
+)
