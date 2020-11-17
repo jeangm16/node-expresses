@@ -1,6 +1,6 @@
 {
   "name": "node-expresses",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "In this assignment, you'll create a logger with MySQL, Node, Express, Handlebars and a selfmade ORM. Follow the MVC design pattern; use Node and MySQL to query and route data in your appz, and Handlebars to generate your HTML.",
   "main": "server.js",
   "scripts": {
